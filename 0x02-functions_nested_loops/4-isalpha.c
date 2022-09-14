@@ -9,6 +9,12 @@
  */
 int _isalpha(int c)
 {
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && <= 'Z'))
+	{
+	return (1);
+	}
+	else
+	{
 	int r;
 
 	r = _isalpha('H');
@@ -21,4 +27,5 @@ int _isalpha(int c)
 	_putchar(r + ('0');
 	_putchar('\n');
 	return (0);
+	}
 }
