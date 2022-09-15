@@ -5,7 +5,7 @@
  * Return:void
  */
 
-void jack_bauer(void)
+void jack_baver(void)
 {
 
 int h1;
@@ -32,7 +32,7 @@ while (h2 <= 2)
 		while (m2 <= 5)
 		{
 			_putchar('0' + h2);
-			_putchar('0' + h10);
+			_putchar('0' + h1);
 			_putchar(':');
 			_putchar('0' + m2);
 			_putchar('0' + m1);
@@ -42,6 +42,4 @@ while (h2 <= 2)
 		m2++;
 	}
 	h1++;
-}
-
 }
