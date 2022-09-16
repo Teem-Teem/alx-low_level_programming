@@ -19,5 +19,6 @@ int _putchar(char);
 int _isupper(int);
 int _isdigit(int);
 int mul(int, int);
+int is_prime(long n);
 
 #endif /* MAIN_H */
