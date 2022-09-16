@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h
+#include <math.h>
 /**
 *main - prime numbers
 *
@@ -15,7 +15,7 @@ while (1)
 
 	if (n % a == 0)
 	{
-		printf(" % lu\n", n / a);
+		printf("%lu \n", n / a);
 		break;
 	}
 	a--;
