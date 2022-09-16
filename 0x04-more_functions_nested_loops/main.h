@@ -20,5 +20,6 @@ int _isupper(int);
 int _isdigit(int);
 int mul(int, int);
 int is_prime(long n);
+void print_number(int n);
 
 #endif /* MAIN_H */
