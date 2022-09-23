@@ -23,7 +23,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (l1 + 2 > size_r || l2 + 2 > size_r)
 		return (0);
 	l1--;
-	l2--;
+	l2--;0
 	while (i <= l1 || i <= l2)
 	{
 		num1 = num2 = 0;
@@ -65,5 +65,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		r[i] = tmp[i];
 		i++;
 	}
-	return (r);
+	return (0);
 }
