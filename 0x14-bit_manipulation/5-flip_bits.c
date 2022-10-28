@@ -10,44 +10,13 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int nlen, mlen, flip, storen, storem;
+	unsigned long int xor = n ^ m, bits = 0;
 
-	nlen = mlen = flip = 0;
-	storen = n;
-	storem = m;
-	while (n > 0)
+	while (xor > 0)
 	{
-		n = n >> 1;
-		nlen++;
+		bits += (xor & 1);
+		xor >>= 1;
 	}
-	while (m > 0)
-	{
-		m = m >> 1;
-		mlen++;
-	}
-	m = storem;
-	n = storen;
-	if (mlen > nlen)
-	{
-		while (mlen > 0)
-		{
-			if ((m & 1) != (n & 1))
-				flip += 1;
-			m = m >> 1;
-			n = n >> 1;
-			mlen--;
-		}
-	}
-	else
-	{
-		while (nlen > 0)
-		{
-			if ((m & 1) != (n & 1))
-				flip += 1;
-			m = m >> 1;
-			n = n >>
-				nlen--;
-		}
-	}
-	return (flip);
+
+	return (bits);
 }
