@@ -1,5 +1,6 @@
 #ifndef __MAINH__
 #define __MAINH__
+#define BUFSIZE 1204
 
 #include <sys/types.h>
 #include <sys/stat.h>
